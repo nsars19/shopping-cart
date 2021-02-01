@@ -9,6 +9,9 @@ function CartItems(state) {
       {cart.map(item => {
         return <p key={uniqid()}>{item.name} - ${item.price}</p>
       })}
+      <h3>Total: ${cart.reduce((total, current) => {
+        return total + parseFloat(current.price);
+      }, 0).toFixed(2)}</h3>
     </div>
   )
 }
