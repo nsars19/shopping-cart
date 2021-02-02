@@ -20,6 +20,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route
+          exact
           path="/shop"
           render={() => <Shop cart={cart} handleClick={addToCart} />}
         />
