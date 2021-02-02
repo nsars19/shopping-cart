@@ -15,7 +15,8 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <div className="bg-overlay" />
+      <Navbar cart={cart}/>
       <Switch>
         <Route
           exact
