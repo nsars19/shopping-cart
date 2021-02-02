@@ -28,7 +28,9 @@ function App() {
             return <ItemDetail {...props} cart={cart} handleClick={addToCart} />;
           }}
         />
-        <Route path="/cartitems" component={CartItems} />
+        <Route path="/cartitems" render={() => {
+          return <CartItems cart={cart} />
+        }} />
         <Route path="/" component={Homepage} />
       </Switch>
     </div>

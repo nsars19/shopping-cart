@@ -1,12 +1,10 @@
 import React from "react";
 import uniqid from "uniqid";
 
-function CartItems(state) {
-  let cart = state.location.state;
-
+function CartItems(props) {
   return (
     <div>
-      {cart.map((item) => {
+      {props.cart.map((item) => {
         return (
           <p key={uniqid()}>
             {item.name} - ${item.price}
@@ -15,7 +13,7 @@ function CartItems(state) {
       })}
       <h3>
         Total: $
-        {cart
+        {props.cart
           .reduce((total, current) => {
             return total + parseFloat(current.price);
           }, 0)
