@@ -1,46 +1,44 @@
-import uniqid from 'uniqid';
-
 const itemsList = {
   items: [
     {
       name: "Milk",
       price: "1.99",
-      id: uniqid()
+      id: 0,
     },
     {
       name: "Eggs",
       price: ".99",
-      id: uniqid(),
+      id: 1,
     },
     {
       name: "Bread",
       price: "2.99",
-      id: uniqid(),
+      id: 2,
     },
     {
       name: "Ham",
       price: "3.99",
-      id: uniqid(),
+      id: 3,
     },
     {
       name: "Peanut Butter",
       price: "4.99",
-      id: uniqid(),
+      id: 4,
     },
     {
       name: "Pizza",
       price: "7.99",
-      id: uniqid(),
+      id: 5,
     },
     {
       name: "Chicken Tenders",
       price: "6.99",
-      id: uniqid(),
+      id: 6,
     },
     {
       name: "Honey Mussy",
       price: "3.99",
-      id: uniqid(),
+      id: 7,
     },
   ],
 }
