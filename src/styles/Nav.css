@@ -8,13 +8,20 @@
   display: flex;
   justify-content: right;
   align-items: center;
+  background: linear-gradient(to bottom, #2229, transparent 70%)
 }
 
-.nav > .nav-item {
+.nav-items > .nav-item {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   letter-spacing: 2.4px;
   padding: 20px 25px;
+}
+.nav-item a:hover {
+  color: #bbb;
+}
+.nav-item a:active {
+  color: #999;
 }
 .nav-brand {
   position: absolute;
@@ -25,4 +32,28 @@
 .nav a {
   text-decoration: none;
   color: #eee;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    display: grid;
+    grid-template-rows: 80px 40px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 130px;
+    background: linear-gradient(to bottom, #2229, transparent 70%);
+  }
+  .nav-brand {
+    left: 0;
+    position: relative;
+    width: 100%;
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .nav-items {
+    width: 100vw;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+  }
 }
