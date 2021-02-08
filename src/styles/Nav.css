@@ -19,9 +19,11 @@
 }
 .nav-item a:hover {
   color: #bbb;
+  text-shadow: 0 0 0 #d0d0d0;
 }
 .nav-item a:active {
   color: #999;
+  text-shadow: 0 0 0 #999;
 }
 .nav-brand {
   position: absolute;
