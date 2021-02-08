@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <div className="bg-main" />
       <div className="bg-overlay" />
       <Navbar cart={cart}/>
@@ -35,7 +35,7 @@ function App() {
         }} />
         <Route path="/" component={Homepage} />
       </Switch>
-    </div>
+    </>
   );
 }
 
