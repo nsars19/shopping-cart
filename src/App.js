@@ -15,6 +15,7 @@ function App() {
 
   return (
     <div>
+      <div className="bg-main" />
       <div className="bg-overlay" />
       <Navbar cart={cart}/>
       <Switch>
