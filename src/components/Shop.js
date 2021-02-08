@@ -9,9 +9,10 @@ const Shop = (props) => {
     return (
       <div key={item.id} className="item-card">
         <Link to={`/shop/${item.id}`}>
-          <h2>{item.name} - ${item.price}</h2>
+          <h2>{item.name}</h2>
         </Link>
         <img src={item.src} alt="Picture of product" />
+        <p>${item.price}/lb</p>
         <h3 onClick={() => props.handleClick(item)}>Add to Cart</h3>
       </div>
     )
