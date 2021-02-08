@@ -10,12 +10,15 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-body {
-  height: 100vh;
+.bg-main {
+  height: 100%;
+  width: 100%;
   background: url(../assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: fixed;
+  top: 0;
   z-index: -2;
 }
 
