@@ -19,12 +19,9 @@ const Shop = (props) => {
   };
 
   return (
-    <>
-      <Cart cart={props.cart} />
-      <div className="shop-items">
-        {itemsList.items.map(item => buildItemElement(item))}
-      </div>
-    </>
+    <div className="shop-items">
+      {itemsList.items.map(item => buildItemElement(item))}
+    </div>
   )
 };
 
