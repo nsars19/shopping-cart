@@ -11,7 +11,7 @@ const Shop = (props) => {
         <Link to={`/shop/${item.id}`}>
           <h2>{item.name} - ${item.price}</h2>
         </Link>
-        <img src="#" alt="Picture of product" height="100px" width="100px" />
+        <img src="#" alt="Picture of product" />
         <h3 onClick={() => props.handleClick(item)}>Add to Cart</h3>
       </div>
     )
@@ -20,7 +20,9 @@ const Shop = (props) => {
   return (
     <>
       <Cart cart={props.cart} />
-      {itemsList.items.map(item => buildItemElement(item))}
+      <div className="shop-items">
+        {itemsList.items.map(item => buildItemElement(item))}
+      </div>
     </>
   )
 };
