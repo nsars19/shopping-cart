@@ -10,7 +10,7 @@
     padding: 10px;
     border-radius: 8px;
     margin: 15px 40px;
-    background: linear-gradient(to top right, #f0f0f0aa, #d0d0d0cc);
+    background-color: #fffc;
     display: grid;
     justify-items: center;
     align-items: center;
