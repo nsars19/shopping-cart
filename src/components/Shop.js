@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import itemsList from "./itemsList";
 import { Link } from "react-router-dom";
 import "../styles/Shop.css";
@@ -12,16 +12,18 @@ const Shop = (props) => {
         </Link>
         <img src={item.src} alt="Picture of product" />
         <p>${item.price}/lb</p>
-        <button className="add-to-cart" onClick={() => props.handleClick(item)}>Add to Cart</button>
+        <button className="add-to-cart" onClick={() => props.handleClick(item)}>
+          Add to Cart
+        </button>
       </div>
-    )
+    );
   };
 
   return (
     <div className="shop-items">
-      {itemsList.items.map(item => buildItemElement(item))}
+      {itemsList.items.map((item) => buildItemElement(item))}
     </div>
-  )
+  );
 };
 
 export default Shop;
