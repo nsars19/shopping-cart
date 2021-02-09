@@ -17,8 +17,13 @@ const CartItem = (props) => {
     <>
       <Cart cart={props.cart}/>
       <h1>{item.name}</h1>
-      <button onClick={() => props.handleClick(item)}>Add to cart</button>
-    </>  
+          <img src={item.src} />
+          <div>${item.price}/lb</div>
+          <button className="add-to-cart" onClick={() => props.handleClick(item)}>Add to cart</button>
+        </div>
+      </div>
+      <Link to="/shop" className="back-link">Back</Link>
+    </>
   )
 };
 
