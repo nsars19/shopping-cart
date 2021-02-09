@@ -13,6 +13,14 @@ function App() {
     setCart([...cart, item]);
   };
 
+  const removeFromCart = (item) => {
+    let idx = cart.indexOf(item);
+    let newCart = cart;
+    newCart.splice(idx, 1);
+
+    setCart([...newCart]);
+  };
+
   return (
     <>
       <div className="bg-main" />
