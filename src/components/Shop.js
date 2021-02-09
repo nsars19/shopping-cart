@@ -1,6 +1,5 @@
 import React from 'react';
 import itemsList from "./itemsList";
-import Cart from "./Cart";
 import { Link } from "react-router-dom";
 import "../styles/Shop.css";
 
