@@ -45,6 +45,7 @@
     grid-area: btn;
     align-self: end;
     user-select: none;
+    font-size: 15px;
     letter-spacing: 2px;
     padding: 10px;
     background-color: #ffa42c;
@@ -55,12 +56,6 @@
 }
 .item-card h3:active {
     background-color: #fbb13b;
-}
-
-@media (max-width: 810px) {
-    .item-card h3 {
-        font-size: 15px;
-    }
 }
 
 @media (max-width: 520px) {
