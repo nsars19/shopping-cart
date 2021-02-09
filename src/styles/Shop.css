@@ -41,7 +41,7 @@
 .item-card p {
     grid-area: price;
 }
-.item-card h3 {
+.add-to-cart {
     grid-area: btn;
     align-self: end;
     user-select: none;
@@ -50,11 +50,12 @@
     padding: 10px;
     background-color: #ffa42c;
     border-radius: 8px;
+    border: none;
 }
-.item-card h3:hover {
+.add-to-cart:hover {
     background-color: #f7b853;
 }
-.item-card h3:active {
+.add-to-cart:active {
     background-color: #fbb13b;
 }
 
