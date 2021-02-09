@@ -35,7 +35,9 @@ function App() {
         <Route
           path={"/shop/:itemId"}
           render={(props) => {
-            return <ItemDetail {...props} cart={cart} handleClick={addToCart} />;
+            return (
+              <ItemDetail {...props} cart={cart} handleClick={addToCart} />
+            );
           }}
         />
         <Route path="/cart" render={() => {
