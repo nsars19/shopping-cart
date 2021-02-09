@@ -40,9 +40,18 @@ function App() {
             );
           }}
         />
-        <Route path="/cart" render={() => {
-          return <Cart cart={cart} />
-        }} />
+        <Route
+          path="/cart"
+          render={() => {
+            return (
+              <Cart
+                cart={cart}
+                addToCart={addToCart}
+                removeFromCart={removeFromCart}
+              />
+            );
+          }}
+        />
         <Route path="/" component={Homepage} />
       </Switch>
     </>
