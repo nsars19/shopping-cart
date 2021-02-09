@@ -12,7 +12,7 @@ const Shop = (props) => {
         </Link>
         <img src={item.src} alt="Picture of product" />
         <p>${item.price}/lb</p>
-        <h3 onClick={() => props.handleClick(item)}>Add to Cart</h3>
+        <button className="add-to-cart" onClick={() => props.handleClick(item)}>Add to Cart</button>
       </div>
     )
   };
