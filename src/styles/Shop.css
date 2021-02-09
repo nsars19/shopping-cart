@@ -1,7 +1,7 @@
 .shop-items {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 400px));
     gap: 5px;
     margin-top: 40px;
 }
