@@ -14,7 +14,7 @@ const Navbar = (props) => {
         </span>
         <span className="nav-item">
           <Link to={{
-            pathname: "/cartitems",
+            pathname: "/cart",
             state: props.cart,
           }}>Cart({props.cart.length})</Link>
         </span>
