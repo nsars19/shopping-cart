@@ -15,8 +15,9 @@ const CartItem = (props) => {
   
   return (
     <>
-      <Cart cart={props.cart}/>
-      <h1>{item.name}</h1>
+      <div className="detail-wrap">
+        <div id="item-detail" className="item-detail item-card">
+          <h1>{item.name}</h1>
           <img src={item.src} />
           <div>${item.price}/lb</div>
           <button className="add-to-cart" onClick={() => props.handleClick(item)}>Add to cart</button>
