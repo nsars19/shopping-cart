@@ -46,6 +46,7 @@ function App() {
             return (
               <Cart
                 cart={cart}
+                setCart={setCart}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
               />
