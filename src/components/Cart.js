@@ -54,6 +54,7 @@ const Cart = (props) => {
                 defaultValue={count(item)}
                 max="20"
               />
+              <span className="input-unit">lbs</span>
               <span
                 className="cart-add"
                 onClick={() => {
