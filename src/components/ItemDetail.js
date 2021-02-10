@@ -22,6 +22,9 @@ const CartItem = (props) => {
           <img src={item.src} alt="Cheese" />
           <div>${item.price}/lb</div>
           <button className="add-to-cart" onClick={() => props.handleClick(item)}>Add to cart</button>
+          <div className="detail-desc">
+            <p>{item.desc}</p>
+          </div>
         </div>
       </div>
       <Link to="/shop" className="back-link">Back</Link>
