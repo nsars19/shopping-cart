@@ -8,8 +8,8 @@
 
 .item-card {
     padding: 10px;
-    border-radius: 8px;
-    margin: 15px 40px;
+    border-radius: 2px;
+    margin: 0px 5px;
     background-color: #fffc;
     display: grid;
     justify-items: center;
