@@ -29,11 +29,44 @@ const Cart = (props) => {
 
   return (
     <div>
-      {props.cart.map((item) => {
+      {[...cart].map((item) => {
         return (
-          <p key={uniqid()}>
-            {item.name} - ${item.price}
-          </p>
+          <div className="item-card" key={item.id}>
+            <h3>{item.name}</h3>
+            <p>${item.price}/lb</p>
+            <img src={item.src} alt="Cheese" />
+            <div className="count-wrap">
+              <span
+                className="cart-remove"
+                onClick={() => {
+                  props.removeFromCart(item);
+                  const countVal = document.getElementById("item-count");
+                  countVal.value -= 1;
+                }}
+              >
+                <span></span>
+              </span>
+              <input
+                type="number"
+                id="item-count"
+                className="item-count"
+                onChange={handleChange.bind(this, item)}
+                defaultValue={count(item)}
+                max="20"
+              />
+              <span
+                className="cart-add"
+                onClick={() => {
+                  props.addToCart(item);
+                  const countVal = document.getElementById("item-count");
+                  countVal.value = parseInt(countVal.value) + 1
+                }}
+              >
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+          </div>
         );
       })}
       <h3>
