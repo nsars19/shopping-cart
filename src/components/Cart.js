@@ -40,7 +40,7 @@ const Cart = (props) => {
                 className="cart-remove"
                 onClick={() => {
                   props.removeFromCart(item);
-                  const countVal = document.getElementById("item-count");
+                  const countVal = document.getElementById(`item-count${item.id}`);
                   countVal.value -= 1;
                 }}
               >
@@ -48,7 +48,7 @@ const Cart = (props) => {
               </span>
               <input
                 type="number"
-                id="item-count"
+                id={`item-count${item.id}`}
                 className="item-count"
                 onChange={handleChange.bind(this, item)}
                 defaultValue={count(item)}
@@ -59,7 +59,7 @@ const Cart = (props) => {
                 className="cart-add"
                 onClick={() => {
                   props.addToCart(item);
-                  const countVal = document.getElementById("item-count");
+                  const countVal = document.getElementById(`item-count${item.id}`);
                   countVal.value = parseInt(countVal.value) + 1
                 }}
               >
