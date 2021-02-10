@@ -83,3 +83,10 @@
   border-radius: 8px;
   border: none;
 }
+.order-submit:hover {
+  background-color: #f7b853;
+}
+
+.order-submit:active {
+  background-color: #fbb13b;
+}
