@@ -10,7 +10,7 @@ const Shop = (props) => {
         <Link to={`/shop/${item.id}`}>
           <h2>{item.name}</h2>
         </Link>
-        <img src={item.src} alt="Picture of product" />
+        <img src={item.src} alt="Cheese" />
         <p>${item.price}/lb</p>
         <button className="add-to-cart" onClick={() => props.handleClick(item)}>
           Add to Cart
