@@ -35,7 +35,7 @@
     grid-area: img;
     background: linear-gradient(to bottom right, #0005, #0003);
     width: 100%;
-    max-width: 230px;
+    max-width: 215px;
     margin: 10px;
 }
 .item-card p {
