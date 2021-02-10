@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.7a8649e7.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.c4420af9.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.c4420af9.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.b56c1ee8.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.b56c1ee8.js.map",
+    "static/js/2.375ef792.chunk.js": "/shopping-cart/static/js/2.375ef792.chunk.js",
+    "static/js/2.375ef792.chunk.js.map": "/shopping-cart/static/js/2.375ef792.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/main.7a8649e7.chunk.css.map": "/shopping-cart/static/css/main.7a8649e7.chunk.css.map",
+    "static/js/2.375ef792.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.375ef792.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/shopping-cart/static/media/bg.6353269a.jpg",
+    "static/media/bleu.f9fa403d.jpeg": "/shopping-cart/static/media/bleu.f9fa403d.jpeg",
+    "static/media/brie.4f0bf0ea.jpeg": "/shopping-cart/static/media/brie.4f0bf0ea.jpeg",
+    "static/media/camembert.b4161164.jpeg": "/shopping-cart/static/media/camembert.b4161164.jpeg",
+    "static/media/gouda.165c430a.jpeg": "/shopping-cart/static/media/gouda.165c430a.jpeg",
+    "static/media/jarlsberg.a2d88183.jpeg": "/shopping-cart/static/media/jarlsberg.a2d88183.jpeg",
+    "static/media/mascarpone.5d55bf02.jpeg": "/shopping-cart/static/media/mascarpone.5d55bf02.jpeg",
+    "static/media/roquefort.ea1b20b8.jpeg": "/shopping-cart/static/media/roquefort.ea1b20b8.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b56c1ee8.js",
+    "static/js/2.375ef792.chunk.js",
+    "static/css/main.7a8649e7.chunk.css",
+    "static/js/main.c4420af9.chunk.js"
+  ]
+}
