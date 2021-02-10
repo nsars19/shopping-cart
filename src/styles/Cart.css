@@ -60,7 +60,7 @@
 }
 
 #checkout {
-  max-width: 600px;
+  width: 85vw;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   margin-bottom: 20px;
