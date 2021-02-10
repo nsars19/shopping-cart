@@ -22,7 +22,7 @@
 @media (max-width: 520px) {
   #item-detail {
     grid-template-columns: 100%;
-    grid-template-rows: 170px 50px 30px 70px;
+    grid-template-rows: 200px 50px 30px 70px;
   }
   #item-detail img {
     max-width: 250px;
