@@ -28,7 +28,7 @@ const Cart = (props) => {
   };
 
   return (
-    <div>
+    <div className="wrap-cart">
       {[...cart].map((item) => {
         return (
           <div className="item-card item-card-cart" key={item.id}>
