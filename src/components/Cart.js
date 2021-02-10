@@ -70,14 +70,17 @@ const Cart = (props) => {
           </div>
         );
       })}
-      <h3>
-        Total: $
-        {props.cart
-          .reduce((total, current) => {
-            return total + parseFloat(current.price);
-          }, 0)
-          .toFixed(2)}
-      </h3>
+      <div id="checkout"className="item-card">
+        <h3>
+          Total: $
+          {props.cart
+            .reduce((total, current) => {
+              return total + parseFloat(current.price);
+            }, 0)
+            .toFixed(2)}
+        </h3>
+        <button className="order-submit">Submit Order</button>
+      </div>
     </div>
   );
 };
