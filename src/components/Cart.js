@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import uniqid from "uniqid";
+import React from "react";
+import "../styles/Cart.css";
 
 const Cart = (props) => {
   // Get unique cart items for card elements
