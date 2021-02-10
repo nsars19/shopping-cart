@@ -31,7 +31,7 @@ const Cart = (props) => {
     <div>
       {[...cart].map((item) => {
         return (
-          <div className="item-card" key={item.id}>
+          <div className="item-card item-card-cart" key={item.id}>
             <h3>{item.name}</h3>
             <p>${item.price}/lb</p>
             <img src={item.src} alt="Cheese" />
